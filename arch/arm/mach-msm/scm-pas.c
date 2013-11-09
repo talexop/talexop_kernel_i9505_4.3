@@ -166,7 +166,7 @@ int pas_supported(enum pas_id id)
 {
 	int ret;
 	u32 periph = id, ret_val = 0;
-
+	
 	if (!secure_pil)
 		return 0;
 

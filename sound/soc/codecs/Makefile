@@ -205,6 +205,7 @@ obj-$(CONFIG_SND_SOC_WM8994)	+= snd-soc-wm8994.o
 obj-$(CONFIG_SND_SOC_WM8995)	+= snd-soc-wm8995.o
 obj-$(CONFIG_SND_SOC_WM9081)	+= snd-soc-wm9081.o
 obj-$(CONFIG_SND_SOC_WM9090)	+= snd-soc-wm9090.o
+obj-$(CONFIG_SOUND_CONTROL_HAX_GPL) += sound_control_gpl.o
 obj-$(CONFIG_SND_SOC_WM9705)	+= snd-soc-wm9705.o
 obj-$(CONFIG_SND_SOC_WM9712)	+= snd-soc-wm9712.o
 obj-$(CONFIG_SND_SOC_WM9713)	+= snd-soc-wm9713.o

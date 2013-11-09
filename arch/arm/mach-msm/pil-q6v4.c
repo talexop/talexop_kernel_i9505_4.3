@@ -76,6 +76,7 @@ static int pil_q6v4_init_image(struct pil_desc *pil, const u8 *metadata,
 	const struct elf32_hdr *ehdr = (struct elf32_hdr *)metadata;
 	struct q6v4_data *drv = dev_get_drvdata(pil->dev);
 	drv->start_addr = ehdr->e_entry;
+	dev_err(pil->dev, "talexop_log.. Get into init_image..\n");
 	return 0;
 }
 
@@ -300,8 +301,9 @@ static struct pil_reset_ops pil_q6v4_ops = {
 
 static int pil_q6v4_init_image_trusted(struct pil_desc *pil,
 		const u8 *metadata, size_t size)
-{
+{	
 	const struct pil_q6v4_pdata *pdata = pil->dev->platform_data;
+	dev_err(pil->dev, "talexop_log.. Get into init_image_trusted..\n");
 	return pas_init_image(pdata->pas_id, metadata, size);
 }
 
